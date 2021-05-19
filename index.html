@@ -1,2 +1,77 @@
-<h1>Git Hub de Prueba</h1>
-<img src="https://www.occamagenciadigital.com/hubfs/occami_hoverboad_gif.gif" alt="">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor</title>
+  <link rel="stylesheet" href="/style.css">
+  <link 
+    rel="stylesheet" 
+    href="/css/tablet.css"
+    media="(min-width: 730px)" />
+  <link 
+    rel="stylesheet" 
+    href="/css/desktop.css"
+    media="(min-width: 1024px)">
+  <script src="https://kit.fontawesome.com/d99aa2c34c.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+  <header>
+    <div class="player__btn player__btn--small">
+      <i class="fas fa-arrow-left"></i>
+    </div>
+    <h5 class="player__title">Ahora o Nunca</h5>
+    <div class="player__btn player__btn--small">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+   <main>
+    <section class="player player__album">
+      <img src="/assets/apache.jpg" alt="" class="player__img">
+      <div class="player__info">
+        <div class="player__btn player__btn--small favorite">
+          <i class="fas fa-heart"></i>
+        </div>
+        <div class="player__album--sub">
+          <h3 class="player__song">360 Grados</h3>
+          <h3 class="player__artist">Apache</h3>  
+        </div>
+        <button class="switch" id="switch">
+          <span><i class="fas fa-sun"></i></span>
+          <span><i class="fas fa-moon"></i></span>
+        </button>
+      </div>
+      </section>
+    <section class="player player__barra--desktop">
+      <div class="player__barra">
+        <audio class="player__audio" controls id="audio">
+          <source src="/assets/audio/360 Grados    Apache.mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="20" min="0" class="player__level">
+        <div class="audio-duration">
+          <div class="start">01:57</div>
+          <div class="end">04:24</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="player__btn player__btn--medium" id="backward">
+      <i class="fas fa-backward"></i>
+    </div>
+    <div class="player__btn player__btn--medium blue" id="play">
+      <i class="fas fa-play play-btn"></i>
+      <i class="fas fa-pause pause-btn hide"></i>
+    </div>
+    <div class="player__btn player__btn--medium" id="forward">
+      <i class="fas fa-forward"></i>
+    </div> 
+  </footer>
+</body>
+<script src="/scripts.js"></script>
+</html>
